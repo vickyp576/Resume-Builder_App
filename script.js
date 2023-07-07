@@ -85,11 +85,6 @@ document.getElementById('addEducationButton').addEventListener('click', function
   
     // Display generated resume
     document.getElementById('output').innerHTML = resumeContent;
-
-    // clear input data after generate resume
-     name = document.getElementById('name').value="";
-     email = document.getElementById('email').value="";
-     phone = document.getElementById('phone').value="";
   
   });
   
