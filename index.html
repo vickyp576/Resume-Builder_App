@@ -8,43 +8,44 @@
 </head>
 <body>
 
-  <h1>Create Your Resume </h1>
+  <h1>Create Resume </h1>
 
   <form id="resumeForm">
-    <label for="name">Name</label>
-    <input type="text" id="name" placeholder="Enter your name" required>
+    <label for="name">Name :</label>
+    <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-    <label for="email">Email</label>
-    <input type="text" id="email" placeholder="Enter your email" required>
+    <label for="email">Email :</label>
+    <input type="text" id="email" placeholder="Enter your email" required><br><br>
 
-    <label for="phone">Phone</label>
-    <input type="text" id="phone" placeholder="Enter your phone number" required>
+    <label for="phone">Phone :</label>
+    <input type="text" id="phone" placeholder="Enter your phone number" required><br><br>
 
     <div id="educationContainer">
-      <label>Education</label>
+      <label >Education :</label>
       <div class="entry">
-        <label for="institute">Institute Name</label>
-        <input type="text" class="institute" placeholder="Enter institute name" required>
+        <label for="institute">Institute Name :</label>
+        <input type="text" class="institute" placeholder="Enter institute name" required><br>
 
-        <label for="course">Course</label>
-        <input type="text" class="course" placeholder="Enter course name" required>
+        <label for="course">Course :</label>
+        <input type="text" class="course" placeholder="Enter course name" required><br>
 
-        <label for="percentage">Percentage / CGPA</label>
-        <input type="text" class="percentage" placeholder="Enter percentage or CGPA" required>
+        <label for="percentage">Percentage / CGPA :</label>
+        <input type="text" class="percentage" placeholder="Enter percentage or CGPA" required><br>
 
         <button class="remove-button" type="button">Remove</button>
+        <!-- <button id="addEducationButton" type="button">Add Education</button> -->
       </div>
     </div>
 
     <button id="addEducationButton" type="button">Add Education</button>
 
     <div id="experienceContainer">
-      <label>Experience</label>
+      <label>Experience :</label>
       <div class="entry">
-        <label for="organization">Organization Name</label>
+        <label for="organization">Organization Name :</label>
         <input type="text" class="organization" placeholder="Enter organization name" required>
 
-        <label for="position">Position</label>
+        <label for="position">Position :</label>
         <input type="text" class="position" placeholder="Enter your position" required>
 
         <button class="remove-button" type="button">Remove</button>
@@ -53,7 +54,10 @@
 
     <button id="addExperienceButton" type="button">Add Experience</button>
 
-    <button type="submit">Generate Resume</button>
+    <div id="generateResume">
+      <button type="submit" >Generate Resume</button>
+    </div>
+
   </form>
 
   <div id="output"></div>
